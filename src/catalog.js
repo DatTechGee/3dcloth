@@ -1,0 +1,130 @@
+// Storefront catalogue — one physical garment system, presented as a fashion brand.
+
+export const CATEGORIES = [
+  { id: 't-shirts', label: 'T-Shirts' },
+  { id: 'trousers', label: 'Trousers' },
+  { id: 'corporate', label: 'Corporate & office' },
+  { id: 'events', label: 'Events & weddings' },
+  { id: 'brands', label: 'Brand merch' },
+  { id: 'youth', label: 'Youth groups & churches' },
+]
+
+export const PRODUCTS = [
+  {
+    id: 'classic-tee',
+    category: 'brands',
+    kind: 'tee',
+    name: 'Classic Crew Neck',
+    tagline: 'Everyday weight. Everyday icon.',
+    fabric: '180gsm combed cotton',
+    fit: 'Regular fit',
+    bestseller: false,
+    rating: 4.8,
+    reviews: 26,
+    swatch: '#202020',
+    colorId: 'black',
+    badge: 'NEW',
+  },
+  {
+    id: 'premium-tee',
+    category: 'brands',
+    kind: 'tee',
+    name: 'Premium Crew Neck',
+    tagline: 'Heavyweight cotton that holds its shape.',
+    fabric: '240gsm heavyweight cotton',
+    fit: 'Relaxed fit',
+    bestseller: true,
+    rating: 4.9,
+    reviews: 42,
+    swatch: '#090909',
+    colorId: 'black',
+    badge: 'BESTSELLER',
+  },
+  {
+    id: 'polo',
+    category: 'corporate',
+    kind: 'tee',
+    name: 'Piqué Polo',
+    tagline: 'Office-ready, boardroom-approved.',
+    fabric: 'Piqué cotton, 2-button',
+    fit: 'Regular fit',
+    bestseller: false,
+    rating: 4.7,
+    reviews: 18,
+    swatch: '#23304d',
+    colorId: 'navy',
+    badge: 'TRENDING',
+  },
+  {
+    id: 'chino',
+    category: 'corporate',
+    kind: 'trousers',
+    name: 'Chino Trouser',
+    tagline: 'The flat-front staple, garment-dyed soft.',
+    fabric: 'Cotton twill, 280gsm',
+    fit: 'Tapered fit',
+    bestseller: true,
+    rating: 4.8,
+    reviews: 31,
+    swatch: '#5c6244',
+    colorId: 'olive',
+    badge: 'BESTSELLER',
+  },
+  {
+    id: 'cargo',
+    category: 'events',
+    kind: 'trousers',
+    name: 'Cargo Trouser',
+    tagline: 'Utility pockets, ripstop tough.',
+    fabric: 'Ripstop cotton, 300gsm',
+    fit: 'Relaxed fit',
+    bestseller: false,
+    rating: 4.6,
+    reviews: 14,
+    swatch: '#202020',
+    colorId: 'charcoal',
+    badge: 'NEW',
+  },
+  {
+    id: 'denim',
+    category: 'trousers',
+    kind: 'trousers',
+    name: 'Denim Jean',
+    tagline: 'Raw 12oz ring-spun denim, breaks in with you.',
+    fabric: '12oz ring-spun denim',
+    fit: 'Straight fit',
+    bestseller: false,
+    rating: 4.7,
+    reviews: 22,
+    swatch: '#23304d',
+    colorId: 'navy',
+    badge: 'TRENDING',
+  },
+]
+
+export const PRODUCT_DETAILS = {
+  material: '100% combed ring-spun cotton, pre-shrunk',
+  printMethod: 'Direct-to-garment (DTG) + heat cure for a soft, durable finish',
+  care: 'Machine wash cold, inside out. Do not iron directly on print.',
+  production: 'Design approved → print → quality check → dispatch',
+}
+
+export const WHY_LOVE = [
+  'Premium combed cotton that softens with every wash',
+  'Comfortable, true-to-size fit — size guide available',
+  '300 DPI print quality checked before production',
+  'Designed, printed and delivered from Abuja',
+]
+
+export const HOW_STEPS = [
+  ['01', 'CHOOSE', 'Pick your shirt, colour and size.'],
+  ['02', 'CREATE', 'Add images, text and graphics in the studio.'],
+  ['03', 'PREVIEW', 'See the design live in 3D, from every angle.'],
+  ['04', 'APPROVE', 'Run the print-quality check and lock your artwork.'],
+  ['05', 'ORDER', 'Pay securely and receive your shirt in Abuja.'],
+]
+
+export const PAYMENT_METHODS = [
+  { id: 'paystack', label: 'Card / Bank transfer / USSD', note: 'Secure Paystack checkout — Visa, Verve, Mastercard, transfer & USSD' },
+  { id: 'delivery', label: 'Pay on delivery', note: 'Pay cash on arrival — Abuja zones only, verified by our team' },
+]
